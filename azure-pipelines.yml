@@ -84,10 +84,10 @@ steps:
 #     sqMavenPluginVersionChoice: 'pom'
 #   continueOnError: true
 #   displayName: Functional Test 
-# - task: PublishPipelineArtifact@1
-#   inputs:
-#     targetPath: $(System.DefaultWorkingDirectory)
-#     artifact: 'drop'
+- task: PublishPipelineArtifact@1
+  inputs:
+     targetPath: $(System.DefaultWorkingDirectory)
+     artifact: 'drop'
 # - task: NodeTool@0
 #   displayName: 'Install Node 12.x'
 #   inputs:
