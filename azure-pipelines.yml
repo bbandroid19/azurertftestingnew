@@ -15,7 +15,7 @@ variables:
 - name: MAVEN_OPTS_TEST_CUCUMBER
   value: '-Dtestfile=src/test/javarunner.TestRunner.java  '
 - name: MAVEN_OPTS_TEST_MUNIT
-  value: ''    
+  value: '-Dsecure.key=mule -Dmule.env=dev'    
 
 steps:
 - task: DownloadSecureFile@1
